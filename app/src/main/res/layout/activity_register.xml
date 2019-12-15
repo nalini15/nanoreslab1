@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/nano6"
+        android:layout_margin="10sp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="389dp"
+            android:layout_height="62dp"
+            android:layout_marginLeft="3dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="42dp"
+            android:maxHeight="42dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo" />
+
+    <EditText
+    android:id="@+id/ed_username"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:layout_above="@+id/ed_email"
+        android:layout_marginBottom="14dp"
+        android:drawableLeft="@android:drawable/ic_dialog_alert"
+        android:hint="Username" />
+
+    <EditText
+        android:id="@+id/ed_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ed_password"
+        android:layout_marginBottom="19dp"
+        android:drawableLeft="@android:drawable/ic_dialog_email"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/ed_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="307dp"
+        android:hint="password"
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+        android:inputType="textPassword" />
+
+    <Button
+        android:layout_width="269dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginBottom="194dp"
+        android:background="#A903A9F4"
+        android:onClick="register"
+        android:text="Register" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="167dp"
+        android:gravity="center_horizontal"
+        android:onClick="login"
+        android:text="Login Here" />
+
+
+</RelativeLayout>

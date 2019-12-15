@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:background="#6003A9F4"
+        android:text="Subject:" />
+
+    <EditText
+        android:id="@+id/email_subject"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:inputType="textEmailSubject" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="#5203A9F4"
+        android:text="Enter description:" />
+
+    <EditText
+        android:id="@+id/email_text"
+        android:layout_width="match_parent"
+        android:layout_height="112dp" />
+
+    <TextView
+        android:id="@+id/imagepath"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <Button
+        android:id="@+id/selectimage"
+        android:layout_width="149dp"
+        android:layout_height="wrap_content"
+        android:background="#888BC34A"
+        android:text="Attach photos" />
+
+    <Button
+        android:id="@+id/sendemail_intent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8B03A9F4"
+        android:text=" Send " />
+</LinearLayout>

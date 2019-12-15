@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bg"
+    tools:context=".Contact_form">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="371dp"
+        android:layout_height="39dp"
+        android:textSize="25dp"
+        android:text="Schedule Appointment" />
+
+    <TextView
+        android:layout_width="381dp"
+        android:layout_height="49dp"
+        android:background="#5403A9F4"
+        android:text="Subject:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <EditText
+        android:id="@+id/edit_text_subject"
+        android:layout_width="382dp"
+        android:layout_height="76dp"
+        android:inputType="textEmailSubject" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:background="#5403A9F4"
+        android:text="Please provide suitable Date and preferrrable time to you.."
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <EditText
+        android:id="@+id/edit_text_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start|top"
+        android:lines="10" />
+
+    <Button
+        android:id="@+id/button_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8F03A9F4"
+        android:text="send" />
+
+</LinearLayout>
