@@ -3,14 +3,13 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/bg"
+    android:background="@drawable/bg2"
     >
 
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="29dp"
-        android:background="#6003A9F4"
         android:text="Subject:" />
 
     <EditText
@@ -22,7 +21,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="41dp"
-        android:background="#5203A9F4"
+
         android:text="Enter description:" />
 
     <EditText
@@ -46,6 +45,7 @@
         android:id="@+id/sendemail_intent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#8B03A9F4"
-        android:text=" Send " />
+        android:background="#E203A9F4"
+        android:text=" Send "
+        android:textColor="#ffffff"/>
 </LinearLayout>

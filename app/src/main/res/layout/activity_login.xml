@@ -4,7 +4,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_margin="10sp"
-    android:background="@drawable/nano6"
+    android:background="@drawable/nanores"
         xmlns:android="http://schemas.android.com/apk/res/android">
 
         <TextView
@@ -14,17 +14,18 @@
             android:layout_marginBottom="547dp"
             android:gravity="center_horizontal"
             android:text="Login Screen"
+            android:textColor="#000000"
             android:textSize="20sp" />
 
-        <EditText
-            android:id="@+id/ed_email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="464dp"
-            android:hint="Email" />
+    <EditText
+        android:id="@+id/ed_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="464dp"
+        android:hint="Email" />
 
-        <EditText
+    <EditText
         android:id="@+id/ed_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

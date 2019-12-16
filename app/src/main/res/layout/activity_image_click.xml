@@ -4,78 +4,89 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
+    android:background="@drawable/bg2"
     tools:context=".ImageClick">
 
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="409dp"
-        android:layout_height="66dp"
+        android:layout_width="407dp"
+        android:layout_height="59dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="3dp"
-        android:layout_marginLeft="3dp"
-        android:layout_marginEnd="-2dp"
-        android:layout_marginRight="-2dp"
-        android:background="#1942A5F5"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+
+
         android:text="Research-An Endless Journey"
-        android:textColor="#CD000000"
+        android:textColor="#03A9F4"
         android:textSize="25dp" />
 
     <ImageButton
         android:id="@+id/image_serv"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
+        android:layout_width="wrap_content"
+        android:layout_height="181dp"
 
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="223dp"
-        android:layout_marginRight="223dp"
-        android:layout_marginBottom="358dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginEnd="207dp"
+        android:layout_marginRight="207dp"
+        android:layout_marginBottom="295dp"
         app:srcCompat="@drawable/service" />
 
     <ImageButton
         android:id="@+id/image_sales"
-        android:layout_width="180dp"
-        android:layout_height="178dp"
+        android:layout_width="164dp"
+        android:layout_height="177dp"
 
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="14dp"
-        android:layout_marginRight="14dp"
-        android:layout_marginBottom="357dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="295dp"
         app:srcCompat="@drawable/sales" />
 
     <ImageView
         android:id="@+id/image_research"
-        android:layout_width="192dp"
-        android:layout_height="311dp"
+        android:layout_width="wrap_content"
+        android:layout_height="355dp"
 
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="209dp"
-        android:layout_marginRight="209dp"
-        android:layout_marginBottom="73dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginEnd="198dp"
+        android:layout_marginRight="198dp"
+        android:layout_marginBottom="0dp"
         app:srcCompat="@drawable/research" />
 
     <ImageView
         android:id="@+id/image_supp"
-        android:layout_width="178dp"
-        android:layout_height="223dp"
+        android:layout_width="162dp"
+        android:layout_height="218dp"
 
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="-220dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginRight="12dp"
-        android:layout_marginBottom="118dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="62dp"
         app:srcCompat="@drawable/support" />
 
 

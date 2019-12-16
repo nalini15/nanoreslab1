@@ -28,7 +28,7 @@ public class Contact_form extends AppCompatActivity {
                 mail.putExtra(Intent.EXTRA_SUBJECT, sub);
                 mail.putExtra(Intent.EXTRA_TEXT, mess);
                 mail.setType("message/rfc822");
-                startActivity(Intent.createChooser (mail, "Send email via:"));
+                startActivity(Intent.createChooser(mail, "Send email via:"));
             }
         });
     }
