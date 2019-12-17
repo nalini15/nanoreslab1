@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -14,42 +14,101 @@
         android:id="@+id/textView4"
         android:layout_width="371dp"
         android:layout_height="39dp"
-        android:textSize="25dp"
-        android:text="Schedule Appointment" />
-
-    <TextView
-        android:layout_width="381dp"
-        android:layout_height="49dp"
-
-        android:text="Topic:"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        android:text="Schedule Appointment"
+        android:textSize="25dp" />
 
     <EditText
         android:id="@+id/edit_text_subject"
-        android:layout_width="382dp"
-        android:layout_height="76dp"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="505dp"
         android:inputType="textEmailSubject" />
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="66dp"
+        android:layout_height="wrap_content"
 
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="417dp"
         android:text="Please provide suitable Date and preferrrable time to you."
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <EditText
-        android:id="@+id/edit_text_message"
-        android:layout_width="match_parent"
+        android:id="@+id/in_date"
+        android:layout_width="212dp"
         android:layout_height="wrap_content"
-        android:gravity="start|top"
-        android:lines="10" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="331dp" />
+
+    <Button
+        android:id="@+id/btn_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/in_date"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/in_date"
+        android:layout_toRightOf="@+id/in_date"
+        android:text="SELECT DATE" />
+
+    <EditText
+        android:id="@+id/in_time"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/in_date"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="26dp" />
+
+    <Button
+        android:id="@+id/btn_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_date"
+        android:layout_alignStart="@+id/btn_date"
+        android:layout_alignLeft="@+id/btn_date"
+        android:layout_marginStart="-1dp"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginTop="26dp"
+        android:text="SELECT TIME" />
+
+
+    <EditText
+        android:id="@+id/in_note"
+        android:layout_width="395dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/in_time"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="21dp"
+        android:text="Note:" />
 
     <Button
         android:id="@+id/button_send"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="39dp"
         android:background="#E203A9F4"
         android:text="send"
-        android:textColor="#ffffff"/>
+        android:textColor="#ffffff" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="353dp"
+        android:layout_height="31dp"
+        android:layout_above="@+id/edit_text_subject"
+        android:layout_marginBottom="11dp"
+        android:text="Topic" />
+
+</RelativeLayout>

@@ -8,75 +8,72 @@
     tools:context=".ImageClick">
 
 
-
-
-
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPage"
-        android:layout_width="fill_parent"
-        android:layout_height="200dp" />
+        android:layout_width="match_parent"
+        android:layout_height="232dp" />
 
 
     <ImageButton
         android:id="@+id/image_serv"
         android:layout_width="wrap_content"
-        android:layout_height="181dp"
+        android:layout_height="192dp"
 
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="18dp"
-        android:layout_marginLeft="18dp"
-        android:layout_marginEnd="206dp"
-        android:layout_marginRight="206dp"
-        android:layout_marginBottom="263dp"
-        app:srcCompat="@drawable/service" />
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginRight="200dp"
+        android:layout_marginBottom="221dp"
+        app:srcCompat="@drawable/service1" />
 
     <ImageButton
         android:id="@+id/image_sales"
-        android:layout_width="164dp"
-        android:layout_height="177dp"
+        android:layout_width="182dp"
+        android:layout_height="193dp"
 
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="9dp"
-        android:layout_marginRight="9dp"
-        android:layout_marginBottom="271dp"
-        app:srcCompat="@drawable/sales" />
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="221dp"
+        app:srcCompat="@drawable/sales1" />
 
     <ImageView
         android:id="@+id/image_research"
-        android:layout_width="wrap_content"
-        android:layout_height="355dp"
+        android:layout_width="181dp"
+        android:layout_height="184dp"
 
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="21dp"
-        android:layout_marginLeft="21dp"
-        android:layout_marginEnd="198dp"
-        android:layout_marginRight="198dp"
-        android:layout_marginBottom="0dp"
-        app:srcCompat="@drawable/research" />
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginEnd="208dp"
+        android:layout_marginRight="208dp"
+        android:layout_marginBottom="16dp"
+        app:srcCompat="@drawable/research1" />
 
     <ImageView
         android:id="@+id/image_supp"
-        android:layout_width="162dp"
-        android:layout_height="218dp"
+        android:layout_width="177dp"
+        android:layout_height="176dp"
 
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="-220dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginRight="6dp"
-        android:layout_marginBottom="64dp"
-        app:srcCompat="@drawable/support" />
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="17dp"
+        app:srcCompat="@drawable/support1" />
 
 
 </RelativeLayout>

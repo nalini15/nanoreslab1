@@ -9,27 +9,110 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Contact_form extends AppCompatActivity {
+import android.app.DatePickerDialog;
+import android.app.TimePickerDialog;
+//import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.DatePicker;
+import android.widget.EditText;
+import android.widget.TimePicker;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.Calendar;
+
+
+public class Contact_form extends AppCompatActivity  implements View.OnClickListener {
+
+    Button btnDatePicker, btnTimePicker;
+    EditText txtDate, txtTime;
+    private int mYear, mMonth, mDay, mHour, mMinute;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact_form);
 
+        btnDatePicker=(Button)findViewById(R.id.btn_date);
+        btnTimePicker=(Button)findViewById(R.id.btn_time);
+        txtDate=(EditText)findViewById(R.id.in_date);
+        txtTime=(EditText)findViewById(R.id.in_time);
+
+        btnDatePicker.setOnClickListener(this);
+        btnTimePicker.setOnClickListener(this);
+
         ((Button) findViewById(R.id.button_send)).setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
                 String sub = ((EditText)findViewById(R.id.edit_text_subject)).getText().toString();
-                String mess = ((EditText)findViewById(R.id.edit_text_message)).getText().toString();
+                String date = ((EditText)findViewById(R.id.in_date)).getText().toString();
+                String time = ((EditText)findViewById(R.id.in_time)).getText().toString();
+                String note = ((EditText)findViewById(R.id.in_note)).getText().toString();
+               // String mess = ((EditText)findViewById(R.id.edit_text_message)).getText().toString();
+                String mycontent = date + ",   " + time + ",  " + note + "  ";
                 Intent mail = new Intent(Intent.ACTION_SEND);
 
 
 
                 mail.putExtra(Intent.EXTRA_EMAIL,new String[]{"epowersoftnalini@gmail.com"});
                 mail.putExtra(Intent.EXTRA_SUBJECT, sub);
-                mail.putExtra(Intent.EXTRA_TEXT, mess);
+                mail.putExtra(Intent.EXTRA_TEXT,mycontent);
+             //  mail.putExtra(Intent.EXTRA_TEXT, mess);
                 mail.setType("message/rfc822");
                 startActivity(Intent.createChooser(mail, "Send email via:"));
             }
         });
     }
+
+    @Override
+    public void onClick(View v) {
+        if (v == btnDatePicker) {
+
+            // Get Current Date
+            final Calendar c = Calendar.getInstance();
+            mYear = c.get(Calendar.YEAR);
+            mMonth = c.get(Calendar.MONTH);
+            mDay = c.get(Calendar.DAY_OF_MONTH);
+
+
+            DatePickerDialog datePickerDialog = new DatePickerDialog(this,
+                    new DatePickerDialog.OnDateSetListener() {
+
+                        @Override
+                        public void onDateSet(DatePicker view, int year,
+                                              int monthOfYear, int dayOfMonth) {
+
+                            txtDate.setText(dayOfMonth + "-" + (monthOfYear + 1) + "-" + year);
+
+                        }
+                    }, mYear, mMonth, mDay);
+            datePickerDialog.show();
+        }
+        if (v == btnTimePicker) {
+
+            // Get Current Time
+            final Calendar c = Calendar.getInstance();
+            mHour = c.get(Calendar.HOUR_OF_DAY);
+            mMinute = c.get(Calendar.MINUTE);
+
+            // Launch Time Picker Dialog
+            TimePickerDialog timePickerDialog = new TimePickerDialog(this,
+                    new TimePickerDialog.OnTimeSetListener() {
+
+                        @Override
+                        public void onTimeSet(TimePicker view, int hourOfDay,
+                                              int minute) {
+
+                            txtTime.setText(hourOfDay + ":" + minute);
+                        }
+                    }, mHour, mMinute, false);
+            timePickerDialog.show();
+        }
+    }
 }
+
