@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:scaleType="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/technology"
+    android:background="@drawable/splash2"
     android:adjustViewBounds="true"
     android:scaleType="fitCenter"
     tools:context=".SplashActivity">

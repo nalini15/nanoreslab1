@@ -19,7 +19,7 @@ import java.util.HashMap;
 
 public class LoginActivity extends AppCompatActivity {
 
-    public static final String URL_LOGIN = "http://192.168.2.10/test_android/login.php";
+    public static final String URL_LOGIN = "http://192.168.2.15/test_android/login.php";
     EditText ed_email, ed_password;
     SharedPreferences sharedPreferences;
     public static final String MY_PREFERENCES = "MyPrefs";

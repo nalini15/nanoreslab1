@@ -21,7 +21,9 @@ public class RegisterActivity extends AppCompatActivity {
 
     EditText ed_username, ed_email, ed_password;
     ImageView imageView;
-    public static final String URL_REGISTER = "http://192.168.2.10/test_android/register.php";
+    public static final String URL_REGISTER = "http://192.168.2.15/test_android/register.php";
+
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

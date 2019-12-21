@@ -91,7 +91,7 @@
         android:layout_marginStart="0dp"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="21dp"
-        android:text="Note:" />
+        android:text="Note:"  />
 
     <Button
         android:id="@+id/button_send"

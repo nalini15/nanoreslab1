@@ -32,7 +32,7 @@ public class Service extends AppCompatActivity {
 
     // Add button Move previous activity
     Button submit_button;
-    public static final String URL_SERVICE = "http://192.168.2.10/test_android/register.php";
+    String ServerURL = "http://192.168.2.15/Service_db/get_data.php" ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -107,7 +107,7 @@ public class Service extends AppCompatActivity {
 
 
                     //returing the response
-                    return requestHandler.sendPostRequest(URL_SERVICE, params);
+                    return requestHandler.sendPostRequest(ServerURL , params);
                 }
 
                 @Override

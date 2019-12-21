@@ -3,6 +3,7 @@ package com.example.login;
 
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 //import android.support.v7.app.ActionBarActivity;
@@ -37,6 +38,7 @@ public class Sales extends Activity {
     CheckBox Comparison,Quotation,Visit;
     Button buttonOrder;
     ImageView imageView;
+    Context context;
     ArrayList<String> listItems=new ArrayList<>();
     ArrayAdapter<String> adapter;
     Spinner spinner,spinner2;
@@ -51,7 +53,8 @@ public class Sales extends Activity {
         imageView = (ImageView) findViewById(R.id.imageView);
 
         //Loading Image from URL
-        Picasso.get().load("https://www.simplifiedcoding.net/wp-content/uploads/2015/10/advertise.png").into(imageView);
+       Picasso.get().load("http://i.imgur.com/DvpvklR.png").into(imageView);
+        //Picasso.get().load("http://i.imgur.com/DvpvklR.png").into(imageView);
 
         addListenerOnButtonClick();
         spinner=(Spinner)findViewById(R.id.spinner);
@@ -108,7 +111,7 @@ public class Sales extends Activity {
             String result="";
             try{
                 HttpClient httpclient=new DefaultHttpClient();
-                HttpPost httppost= new HttpPost("http://192.168.2.10/sentech_api/getInterviewees.php");
+                HttpPost httppost= new HttpPost("http://192.168.43.37/sentech_api/getInterviewees.php");
                 HttpResponse response=httpclient.execute(httppost);
                 HttpEntity entity = response.getEntity();
                 // Get our response as a String.
